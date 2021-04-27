@@ -20,7 +20,7 @@
      Enter Time:
 	<input type="text" id="timeBox" size=20 value="8:30 AM - Midnight">
      Enter Your Name:
-	<input type="text" id="senderbox" size=20 value="Rick Steves' ">
+	<input type="text" id="senderBox" size=20 value="Ichabod Crane">
    </p>
      <input type="button" value="Click for Invite"
             onclick="document.getElementById('outputDiv').innerHTML=
@@ -37,8 +37,8 @@
 			document.getElementById('timeBox').value + 
 			', on ' + 
                        document.getElementById('dateBox').value + 
-			', for this event' +	'.</p>' +
-                       '<p style=\'text-align:left\'>Sincerely<br> Your Fiend</p>' document.getElementById('senderbox').value;">
+			', for this event' + '.</p>' + 
+                       '<p style=\'text-align:left\'>Sincerely<br> Your Fiend,<br>' + document.getElementById('senderBox').value;">
    <hr>
    <div id="outputDiv"></div>
  </body>
