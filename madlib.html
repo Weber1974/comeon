@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- story .html                                         Dr. Weber, (might become a doctor:)-->
+<!-- telling a story using text boxes -->
+<!-- =========================================================== -->
+
+<html>
+ <head>
+   <title> Story Time </title>
+ </head>
+
+ <body>
+   <h2><p style='text-align:center'> Weber's Fun Story</p> </h2>
+   <p>
+     Enter Tropical Country: 
+       <input type="text" id="place" size=20 value=""> <br>
+     Enter Color: 
+       <input type="text" id="color" size=20 value=""> <br>
+     Enter Name: 
+	<input type="text" id="name" size=20 value=""><br>
+     Enter Plural Drink :
+	<input type="text" id="drink" size=20 value="">
+     Enter Food:
+	<input type="text" id="food" size=20 value="">
+     Enter Plural Animal :
+	<input type="text" id="animal" size=20 value="">
+   </p>
+     <input type="button" value="Click for Story"
+            onclick="place = document.getElementById('place').value;
+				color = document.getElementById('color').value;
+				name = document.getElementById('name').value;
+				drink = document.getElementById('drink').value;
+				food = document.getElementById('food').value;
+				animal = document.getElementById('animal').value;
+			document.getElementById('outputDiv').innerHTML=
+                       '<p> When ' + name + ' goes to ' + place + ', ' + name + ' admires the ' + color + ' beads that are offered at nearby stands, these stands  also sell ' + drink + ' to help cool down hot tourists. </p>' + ' Most of the ' + animal + ' that live there, like to eat the ' + food + ' that the tourists feed them. </p>';"/>
+   <hr>
+   <div id="outputDiv"></div>
+ </body>
+</html>
+
